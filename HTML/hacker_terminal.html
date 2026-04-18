@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            
+    background:black;
+    color:lime;
+    font-family:monospace;
+}
+
+        
+
+        p{
+            font-weight: 500;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="p1"></div>
+    <div class="p2"></div>
+    <div class="p3"></div>
+    <div class="p4"></div>
+    <div class="p5"></div>
+    <div class="p6"></div>
+    <div class="p7"></div>
+    <div class="p8"></div>
+    <div class="p9"></div>
+    <div class="p10"></div>
+
+    <script>
+        let msg=[
+"Initializing Hack tool...",
+"Connecting to Facebook...",
+"Connecting to server 1...",
+"Connection failed. Retrying...",
+"Connecting to server 2",
+"Connected Successfully...",
+"Match not found",
+"Hack Successful..."
+    ];
+
+    let time=[1000,2000,3000,4000,5000,6000,7000];
+
+        let num=Math.floor(Math.random()*10);
+        async function text() {
+
+            for(let i=1;i<msg.length;i++){
+                await new Promise((resolve)=>{setTimeout(() => {
+                    document.querySelector(`.p${i}`).innerHTML=msg[i];
+                    resolve();
+                    
+                }, time[Math.floor(Math.random()*time.length)]);
+            });
+                
+            }
+
+            
+            
+        }
+        text();
+    </script>
+</body>
+</html>
