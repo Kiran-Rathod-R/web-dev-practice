@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+<style>
+   *{ 
+   padding: 0;
+  margin: 0; 
+  /* box-sizing: border-box; */
+   }
+
+  .carddiv{
+    background-color: white;
+    color: black;
+    height: 510px;
+    width: 360px;
+    position: relative;
+    border: 4px solid black;
+    border-radius: 5%;
+    top: 150px;
+    left: 600px;
+
+    /* margin: 150px auto; */
+    
+
+   
+  }
+  #im{
+    
+    padding: 10px;
+     display: inline-block;
+     background-color: white;
+     position: relative;
+     height: 250px;
+     width: 340px;
+     border-radius: 10%;
+
+  }
+  #im img{
+    position: relative;
+    height: 250px;
+    width: 340px;
+    border-radius: 3%;
+    
+  }
+
+  span{
+    font-family: 'Times New Roman', Times, 
+    serif;
+    position: relative;
+    top:2px;
+    left: 15px;
+    padding: 3px;
+    
+    margin: 5px;
+    display: inline-block;
+    width: 70px;
+    height: 15px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 40%;
+    background-color: rgb(255, 255, 255);
+    
+  }
+
+  h3{
+    position: relative;
+    top: 20px;
+    left: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+
+  }
+
+  #para{
+    align-items:center ;
+    justify-content: center;
+    height:fit-content;
+    
+    
+  }
+
+  p{
+    position: relative;
+   top: 40px;
+   text-align: center;
+   padding-left: 10px;
+
+
+
+
+  }
+  button{
+    position: relative;
+    top: 75px;
+    left: 140px;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    color: blue;
+    background-color: rgba(157, 170, 226, 0.742);
+  }
+
+  
+
+</style>
+ 
+
+</head>
+<body>
+
+  <div class="carddiv">
+
+    <div id="im">
+      <img src="image.jpeg" alt="anime">
+    </div>
+
+    <span id="tag">ANIME</span>
+    <span id="tag">VIBE</span>
+
+    <h3>ANIME IS LOVE</h3>
+
+    <div class="para">
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat consectetur dignissimos. Voluptate deserunt in veniam exercitationem amet! Modi.
+</p>
+    </div>
+
+    <button id="but">Read More</button>
+  </div>
+
+
+  
+</body>
+</html>
